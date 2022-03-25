@@ -1,23 +1,23 @@
-// function segitiga(baris) {
-//   let bintang = "";
-//   for (let i = 0; i <= baris; i++) {
-//     for (let y = baris; y >= i; y--) {
-//       bintang += "*";
-//     }
-//     bintang += "\n";
-//   }
-//   return bintang;
-// }
-// console.log(segitiga(5));
-
-let bintang = "";
-for (let i = 0; i < 5; i++) {
-  for (let y = 5; y > i; y--) {
-    bintang += "*";
+function segitiga(baris) {
+  let bintang = "";
+  for (let i = 0; i <= baris; i++) {
+    for (let y = baris; y >= i; y--) {
+      bintang += "*";
+    }
+    bintang += "\n";
   }
-  bintang += "\n";
+  return bintang;
 }
-console.log(bintang);
+console.log(segitiga(5));
+
+// let bintang = "";
+// for (let i = 0; i < 5; i++) {
+//   for (let y = 5; y > i; y--) {
+//     bintang += "*";
+//   }
+//   bintang += "\n";
+// }
+// console.log(bintang);
 
 // let bintang = "";
 // for (let i = 1; i <= 3; i++) {
